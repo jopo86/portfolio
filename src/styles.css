@@ -161,6 +161,20 @@ body {
     align-self: flex-start;
 
     animation: fadeIn 0.5s ease-in;
+    padding: 0% 1% 0.75% 1%;
+
+}
+
+.geek-mode-toggle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--col-base);
+    z-index: -1;
+    border-radius: 0 10px 10px 0;
 }
 
 .geek-mode-toggle .icon {
@@ -187,13 +201,13 @@ body {
 #container-garnet .geek-mode-toggle,
 #container-onyx .geek-mode-toggle {
     position: fixed;
-    top: 8vh;
+    top: calc(8vh + 2vw);
 }
 
 @media (max-width: 600px) {
     #container-garnet .geek-mode-toggle,
     #container-onyx .geek-mode-toggle {
-        top: 6vh;
+        top: calc(6vh + 2vw);
     }
 }
 
@@ -277,12 +291,6 @@ body {
 #container-onyx .geek-mode-toggle.on .icon {
     color: transparent;
     background: linear-gradient(-120deg, var(--col-orange), var(--col-yellow));
-    background-clip: text;
-}
-
-#container-onyx .geek-mode-toggle.on {
-    color: transparent;
-    background: linear-gradient(-120deg, var(--col-yellow), var(--col-orange));
     background-clip: text;
 }
 
@@ -489,12 +497,6 @@ body {
 #container-garnet .geek-mode-toggle.on .icon {
     color: transparent;
     background: linear-gradient(-120deg, var(--col-dred), var(--col-lred));
-    background-clip: text;
-}
-
-#container-garnet .geek-mode-toggle.on {
-    color: transparent;
-    background: linear-gradient(-120deg, var(--col-lred), var(--col-dred));
     background-clip: text;
 }
 

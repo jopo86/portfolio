@@ -10,6 +10,7 @@ function HomePage() {
 
     useEffect(() => {
         document.title = "Portfolio - Josh Posner";
+        alert("Welcome to my portfolio!\n\nBe sure to turn off 'Geek Mode' on the top left if it's difficult to understand the computer science jargon.");
     }, []);
 
     return (
