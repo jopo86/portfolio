@@ -18,9 +18,7 @@ function HomePage() {
             <header id="intro">
                 <h1 id="heading">Josh<br />Posner</h1>
                 <p id="tagline">
-                    Software engineer seeking a Spring 2027 co-op. I find the places where
-                    powerful low-level tools are painful to use, and build the
-                    layer that makes them simple.
+                    Software engineer seeking a Spring 2027 co-op.
                 </p>
                 <p id="meta">
                     B.S. Computer Science &amp; Mathematics, Northeastern University
